@@ -1,0 +1,73 @@
+.weather-card-container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: blue;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.weather-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(3, 3, 211);
+  padding: 0.5rem;
+  height: 4rem;
+}
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 48px;
+}
+.weather-info img {
+  width: 40%;
+}
+.weather-details {
+  display: flex;
+  justify-content: space-around;
+}
+.weather-details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.weather-details ul:last-child {
+  align-self: flex-end;
+}
+.weather-details ul li {
+  text-align: left;
+}
+.weather-card-container.small {
+  background-color: darkblue;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.weather-card-container.small .weather-time {
+  background-color: darkblue;
+  position: relative;
+}
+.weather-card-container.small .weather-time::after {
+  content: '';
+  position: absolute;
+  bottom: -0.25rem;
+  height: 1px;
+  width: 60%;
+  background-color: blueviolet;
+}
+.weather-card-container.small .weather-info {
+  flex-direction: column-reverse;
+  height: 80%;
+  justify-content: space-evenly;
+}
+.weather-card-container.small .weather-info img {
+  width: 90%;
+  height: 45%;
+}
+.weather-card-container.small p {
+  font-size: 32px;
+}
