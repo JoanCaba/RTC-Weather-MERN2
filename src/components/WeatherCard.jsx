@@ -115,7 +115,7 @@ time.
   return (
     <div className={`weather-card-container ${size}`}>
       <div className="weather-time">
-        <p>Monday</p>
+        {size === 'large' ? <p>Monday</p> : <p>Mon</p>}
         {size === 'large' && <time dateTime="Thh:mm:ss">{data.time}</time>}
       </div>
       <div className="weather-info">

@@ -4,7 +4,14 @@ import WeatherCard from './components/WeatherCard';
 function App() {
   return (
     <>
-      <WeatherCard></WeatherCard>
+      <div className="test">
+        <WeatherCard></WeatherCard>
+        <WeatherCard size="small"></WeatherCard>
+        <WeatherCard size="small"></WeatherCard>
+        <WeatherCard size="small"></WeatherCard>
+        <WeatherCard size="small"></WeatherCard>
+        <WeatherCard size="small"></WeatherCard>
+      </div>
     </>
   );
 }

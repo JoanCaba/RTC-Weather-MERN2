@@ -29,6 +29,7 @@
 .weather-details {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 1rem;
 }
 .weather-details ul {
   display: flex;
@@ -43,7 +44,7 @@
 }
 .weather-card-container.small {
   background-color: darkblue;
-  width: 200px;
+  width: 100px;
   justify-content: space-between;
 }
 
@@ -69,5 +70,5 @@
   height: 45%;
 }
 .weather-card-container.small p {
-  font-size: 32px;
+  font-size: 2rem;
 }
