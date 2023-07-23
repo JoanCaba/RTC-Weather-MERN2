@@ -1,0 +1,34 @@
+.wind-radial-border {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: 2px groove var(--boder-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wind-radial-inside-border {
+  border: 2px dashed var(--boder-color);
+  width: 95%;
+  height: 95%;
+  border-radius: 100%;
+  position: relative;
+}
+
+.wind-pointer-container {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wind-pointer {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: var(--boder-color);
+  width: 15px;
+  height: 15px;
+  rotate: 45deg;
+}

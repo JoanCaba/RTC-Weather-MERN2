@@ -7,11 +7,11 @@ const Highlights = () => {
     <div className="highlights-container">
       <div className="highlights-large-cards">
         <HighlightCard cardType="wind" size="large" />
-        <HighlightCard cardType="humidity" size="large" />
+        <HighlightCard cardType="visibility" size="large" />
         <HighlightCard cardType="humidity" size="large" />
       </div>
       <div className="highlights-small-cards">
-        <HighlightCard cardType="humidity" size="small" />
+        <HighlightCard cardType="wind" size="small" />
         <HighlightCard cardType="visibility" size="small" />
         <HighlightCard cardType="humidity" size="small" />
       </div>

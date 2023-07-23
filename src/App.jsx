@@ -7,8 +7,8 @@ import Highlights from './components/Highlights/Highlights';
 function App() {
   return (
     <>
+      <WindCard></WindCard>
       <Highlights></Highlights>
-      <HumidityCard></HumidityCard>
     </>
   );
 }
