@@ -5,6 +5,7 @@ import HighlightCard from './HighlightCard/HighlightCard';
 const Highlights = () => {
   return (
     <div className="highlights-container">
+      <h2>Highlights</h2>
       <div className="highlights-large-cards">
         <HighlightCard cardType="wind" size="large" />
         <HighlightCard cardType="visibility" size="large" />

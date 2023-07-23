@@ -1,0 +1,10 @@
+.highlights-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.highlights-container > div {
+  display: flex;
+  gap: 1rem;
+}
