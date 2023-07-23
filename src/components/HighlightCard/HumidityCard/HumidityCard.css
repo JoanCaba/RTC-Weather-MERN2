@@ -1,0 +1,33 @@
+.humidity-card {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(40, 40, 190);
+  border-radius: var(--border-radius);
+}
+.humidity-relative {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.humidity-relative p {
+  font-size: 28px;
+}
+.humidity-relative span {
+  font-size: 10px;
+}
+.humidity-dew {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.humidity-dew img {
+  width: 24px;
+  height: 24px;
+}
