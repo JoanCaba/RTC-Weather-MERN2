@@ -1,15 +1,14 @@
 import './App.css';
-import WindCard from './components/HighlightCard/WindCard/WindCard';
-import HumidityCard from './components/HighlightCard/HumidityCard/HumidityCard';
+import WindCard from './components/Highlights/WindCard/WindCard';
+import HumidityCard from './components/Highlights/HumidityCard/HumidityCard';
 import WeatherCard from './components/WeatherCard/WeatherCard';
+import Highlights from './components/Highlights/Highlights';
 
 function App() {
   return (
     <>
-      <WindCard />
-      <WeatherCard size="small" />
-      <WeatherCard />
-      <HumidityCard />
+      <Highlights></Highlights>
+      <HumidityCard></HumidityCard>
     </>
   );
 }
