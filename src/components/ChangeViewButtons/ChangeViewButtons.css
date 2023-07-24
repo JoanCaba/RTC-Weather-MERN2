@@ -1,0 +1,18 @@
+.view-buttons-container {
+  display: flex;
+  border: 2px solid var(--clr_accent);
+  border-radius: var(--border-radius);
+  background-color: var(--clr-secondary);
+}
+
+.view-buttons-container a {
+  text-align: center;
+  padding: 0.2rem 1.5rem;
+}
+
+.view-buttons-container a.active {
+  border: 1px solid var(--clr_accent);
+  border-radius: var(--border-radius);
+  background-color: var(--clr-primary);
+  color: var(--clr-surface);
+}

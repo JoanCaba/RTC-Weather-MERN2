@@ -1,0 +1,7 @@
+header {
+  height: 12svh;
+  /* padding: 1rem; */
+  background-color: var(--clr-surface);
+  display: flex;
+  align-items: center;
+}
