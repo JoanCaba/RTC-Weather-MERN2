@@ -14,5 +14,4 @@
   border: 1px solid var(--clr_accent);
   border-radius: var(--border-radius);
   background-color: var(--clr-primary);
-  color: var(--clr-surface);
 }
