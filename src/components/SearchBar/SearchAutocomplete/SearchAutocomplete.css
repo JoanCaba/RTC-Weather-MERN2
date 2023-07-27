@@ -1,0 +1,19 @@
+.autocomplete-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 2rem;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.autocomplete-container li {
+  height: 2rem;
+}
+.autocomplete-container button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}

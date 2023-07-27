@@ -72,7 +72,10 @@ img {
 ul {
   list-style: none;
 }
-
+li {
+  display: inline;
+  list-style-type: none;
+}
 a {
   text-decoration: none;
   font-size: var(--fs-200);
