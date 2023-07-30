@@ -260,8 +260,8 @@ const SearchBar = () => {
     setSearchValue(e.target.value);
   };
   useEffect(() => {
-    const getData = setTimeout(() => {
-      if (searchValue.length >= 3) {
+    if (searchValue.length >= 3) {
+      const getData = setTimeout(() => {
         console.log('API CALL');
         // API_GEO.get(
         //   `?text=${encodeURIComponent(searchValue)}&limit=5&type=city&apiKey=${
@@ -271,21 +271,21 @@ const SearchBar = () => {
         //   console.log(response.data);
         // });
         setSuggestions(response.features); // response.data.features
-      } else {
-        setSuggestions('');
-      }
-    }, 500);
-    return () => clearTimeout(getData);
+      }, 500);
+      return () => clearTimeout(getData);
+    }
+    setSuggestions('');
+    return undefined;
   }, [searchValue]);
   return (
-    <div className="search-bar suggestions-open">
+    <div className="search-bar">
       <input
         value={searchValue}
         placeholder="Search location"
         type="text"
         onChange={(e) => handleSearchInput(e)}
       />
-      {suggestions && <SearchAutocomplete features={suggestions} />}
+      {suggestions && <SearchAutocomplete features={suggestions} setSearchValue={setSearchValue} />}
     </div>
   );
 };
